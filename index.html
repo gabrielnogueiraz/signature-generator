@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Assinaturas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="signature-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome do Funcionário" required>
+
+            <label for="position">Cargo:</label>
+            <input type="text" id="position" placeholder="Cargo do Funcionário" required>
+
+            <label for="branch">Filial:</label>
+            <select id="branch">
+                <option value="Filial JF2">Filial JF2</option>
+                <option value="Filial JF1">Filial JF1</option>
+                <option value="Filial RJ">Filial RJ</option>
+                <option value="Filial BH">Filial BH</option>
+                <option value="Filial DF">Filial DF</option>
+            </select>
+
+            <button class="submit" type="button" onclick="generateSignature()">Gerar Assinatura</button>
+        </form>
+
+        <div id="signature-preview" class="signature-template">
+            
+        </div>
+
+        <button class="download" id="download-btn" onclick="downloadSignature()">Baixar Assinatura</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

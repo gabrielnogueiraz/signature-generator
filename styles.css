@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Embrima&display=swap');
+
+body {
+    font-family: 'Embrima', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column ;
+    margin-left: 450px;
+    text-align: left;
+    margin-bottom: 45px;
+    gap: 3px;
+    width: 400px;
+}
+
+#position {
+    width: 500px;
+}
+
+.informations2 {
+    display: flex;
+    flex-direction: column ;
+    margin-left: 425px;
+    text-align: left;
+    gap: 5px;
+    width: 380px;
+}
+
+.signature-bold {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.signature-light {
+    font-size: 20px;
+}
+
+#signature-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#signature-form label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#signature-form input, select {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.submit {
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a86ff;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.download {
+    width: 400px    ;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a86ff;
+    color: #FFF;
+    font-size: 20px;
+}
+
+#signature-preview {
+    width: 1530px;
+    height: 406px;
+    background-image: url('template-assinatura.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #333;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
