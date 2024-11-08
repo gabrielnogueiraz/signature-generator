@@ -46,8 +46,8 @@ function downloadSignature() {
 
     html2canvas(document.querySelector("#signature-preview")).then(canvas => {
         const link = document.createElement("a");
-        link.href = canvas.toDataURL("image/png");
-        link.download = `assinatura_${name}.png`;
+        link.href = canvas.toDataURL("image/jpg");
+        link.download = `${name}.jpg`;
         link.click();
     });
 }
